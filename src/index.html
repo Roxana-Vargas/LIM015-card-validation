@@ -1,60 +1,76 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Quickly Pizza</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickly pizza</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body>
-    <header>
-      <hi>Quickly Pizza</hi>
-    </header>
-    <nav>
-      <ul>
-      <li><a href="#"> Inicio </a></li>
-      <li><a href="#"> Ofertas </a></li>
-      <li><a href="#"> Mi cuenta </a></li>
-      </ul>
-    </nav>
+<body>
+  <header>
+    <hi>Quickly Pizza</hi>
+  </header>
+  <nav>
+    <ul>
+    <li><a href="#"> Inicio </a></li>
+    <li><a href="#"> Ofertas </a></li>
+    <li><a href="#"> Mi cuenta </a></li>
+    </ul>
+  </nav>
 
-    <section>
-      <article>
-        <p>¡Tu pizza la llevamos volando!</p>
-      </article>
-    </section>
-    <section>
-      <div>
-        <h3>Hawaiana</h3>
-        <p>Jamón, piña y queso</p>
-        <p>S/31</p>
-        <img src="imágenes/hawaiana.jpg" alt="hawaiana" height="100">
-        <a href="CardValidation.html" class="button">Elegir</a>
-      </div>
-      <div>
-        <h3>Americana</h3>
-        <p>Jamón y queso</p>
-        <p>S/35</p>
-        <img src="imágenes/americana.jpg" alt="americana" height="100">
-        <a href="CardValidation.html" class="button">Elegir</a>
-      </div>
-      <div>
-        <h3>Pepperoni</h3>
-        <p>Aceitunas negras, pepperoni y queso</p>
-        <p>S/33</p>
-        <img src="imágenes/pepperoni.jpg" alt="pepperoni" height="100">
-        <a href="CardValidation.html" class="button">Elegir</a>
-      </div>
-      <div>
-        <h3>Vegetariana</h3>
-        <p>Champiñones, aceitunas negras y queso</p>
-        <p>S/37</p>
-        <img src="imágenes/vegetariana.jpg" alt="vegetariana" height="100">
-        <a href="CardValidation.html" class="button">Elegir</a>
-      </div>
-    </section>
-    
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
-</html>
+  <div id="div1" style="display:block;">
+    <p>¡Tu pizza te la llevamos volando!</p>
+
+    <div>
+      <h3>Hawaiana</h3>
+      <p>Jamón, piña y queso</p>
+      <p>S/31</p>
+      <img src="imágenes/hawaiana.jpg" alt="hawaiana" height="100">
+      <input type="submit" value="Elegir" onclick="showDiv2()">
+    </div>
+
+    <div>
+      <h3>Americana</h3>
+      <p>Jamón y queso</p>
+      <p>S/35</p>
+      <img src="imágenes/americana.jpg" alt="americana" height="100">
+      <input type="submit" value="Elegir" onclick="showDiv2()">
+    </div>
+
+    <div>
+      <h3>Pepperoni</h3>
+      <p>Aceitunas negras, pepperoni y queso</p>
+      <p>S/33</p>
+      <img src="imágenes/pepperoni.jpg" alt="pepperoni" height="100">
+      <input type="submit" value="Elegir" onclick="showDiv2()">
+    </div>
+
+    <div>
+      <h3>Vegetariana</h3>
+      <p>Champiñones, aceitunas negras y queso</p>
+      <p>S/33</p>
+      <img src="imágenes/pepperoni.jpg" alt="pepperoni" height="100">
+      <input type="submit" value="Elegir" onclick="showDiv2()">
+    </div>
+  </div>
+
+  <div id="div2" style="display: none;">
+    <p>¡Gracias por elegir nuestras pizzas</p>
+    <img src="imágenes/gracias.gif" alt="gracias">
+    <p>Ahora ingresar el número de tu tarjeta para validarla:</p>
+    <input type="numbers" id="numeros" minlength="13" maxlength="16" onkeypress="return numeros(event)">
+    <input type="submit" value="Validar" onclick="showDiv3(); showNumbers()">
+  </div>
+
+  <div id="div3" style="display: none;">
+    <p>Tu tárjeta es válida</p>
+    <p>xxxx-xxxx-xxxx-1234</p>
+    <img src="imágenes/pizza.gif" alt="pizza">
+    <p>Ahora ya puedes realizar tu compra</p>
+    <input type="submit" value="Comprar">
+  </div>
+
+</body>
+<script src="index.js"></script>
+</html> 
