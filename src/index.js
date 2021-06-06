@@ -26,13 +26,9 @@ function showDiv3() {
 /*Obtener los datos ingresados en el input y pasarlos a un array*/
 function showNumbers() {
   let numeros=document.getElementById("numeros").value;
-  console.log(numeros);
-  capturar();
-}
-let nuevoArray= [];
-  function capturar(){
-    nuevoArray.push(numeros);
-    console.log(nuevoArray);
+  let newArray= Array.from(numeros);
+  let numeroInverso= newArray.reverse();
+  console.log(numeroInverso);
 }
 
 
