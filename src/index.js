@@ -23,14 +23,21 @@ function showDiv3() {
   document.getElementById("div1").style.display = "none";
 }
 
-/*Obtener los datos ingresados en el input y pasarlos a un array*/
+/*Validación de la tarjeta*/
 function showNumbers() {
-  let numeros=document.getElementById("numeros").value;
-  let newArray= Array.from(numeros);
-  let numeroInverso= newArray.reverse();
-  console.log(numeroInverso);
+  let numeros=document.getElementById("numeros").value; //obteniendo el valor
+  let newArray= Array.from(numeros); 
+  let numeroInverso= newArray.reverse(); //invertir el número, parseo
+  let convertir= numeroInverso.map(Number);
+    console.log(convertir);
+  let sumas= 0; //sumando las posiciones pares
+    for ( i = 0; i < convertir.length; ++i) {
+      if (i % 2 != 0) {
+        sumas += convertir[i];
+      }
+    }
+    console.log(sumas);
 }
-
 
 
 
