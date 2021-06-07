@@ -47,10 +47,10 @@ function showNumbers() {
   let resto= suma%10;
     console.log(resto)
     if (resto === 0) {
-    console.log ("Tu tarjeta es válida");
+    document.getElementById("validacion").innerHTML = "Tu tarjeta es válida";
     }
     else {
-    console.log ("Tu tarjeta no es válida");
+    document.getElementById("validacion").innerHTML = "Tu tarjeta no es válida";
     }
   
 }
