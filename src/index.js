@@ -30,13 +30,29 @@ function showNumbers() {
   let numeroInverso= newArray.reverse(); //invertir el número, parseo
   let convertir= numeroInverso.map(Number);
     console.log(convertir);
-  let sumas= 0; //sumando las posiciones pares
     for ( i = 0; i < convertir.length; ++i) {
       if (i % 2 != 0) {
-        sumas += convertir[i];
+        convertir[i]*=2;
+        if (convertir[i]>9){
+        convertir[i]-=9;
+        }
       }
     }
-    console.log(sumas);
+  console.log(convertir);
+  let suma= 0;
+    for( i = 0; i < convertir.length; i++){
+      suma += convertir[i];
+    }
+    console.log(suma);
+  let resto= suma%10;
+    console.log(resto)
+    if (resto === 0) {
+    console.log ("Tu tarjeta es válida");
+    }
+    else {
+    console.log ("Tu tarjeta no es válida");
+    }
+  
 }
 
 
