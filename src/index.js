@@ -52,8 +52,20 @@ function showNumbers() {
     else {
     document.getElementById("validacion").innerHTML = "Tu tarjeta no es válida";
     }
-  
+  maskify();
 }
+
+// Mostrar sólo los últimos 4 dígitos
+
+function maskify() {
+  let totalDigitos=document.getElementById("numeros").value; //capturando el valor
+  console.log (totalDigitos);
+  let cuatroDigitos = totalDigitos.split('').map((letter, index) => 
+  index < totalDigitos.length - 4 ? '#' : letter).join('');
+  document.getElementById("digitos").innerHTML = cuatroDigitos;
+}
+
+
 
 
 
