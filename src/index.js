@@ -20,19 +20,22 @@ function numeros(e) {
 
 /*Ocultar y mostrar elementos de html*/
 function mostrar(id){
-  let numeros=document.getElementById("numeros").value;
-  let resultado= validator.isValid(numeros);
-  let digitos=validator.maskify(numeros);
   if(id=="div2"){
   document.getElementById("div2").style.display = "block";
   document.getElementById("div1").style.display = "none";
   document.getElementById("div3").style.display = "none";
-  } else if(id=="div3"){
+  } else if(id=="div3" ){
+  let numeros=document.getElementById("numeros").value || alert("ingresa el número de tu tarjeta");
+  let resultado= validator.isValid(numeros);
+  let digitos=validator.maskify(numeros);
+  if(numeros!=""){
   document.getElementById("div3").style.display = "block";
   document.getElementById("div2").style.display = "none";
   document.getElementById("div1").style.display = "none";
   document.getElementById("validacion").innerHTML= resultado ? "tu tarjeta es válida":"tu tarjeta no es válida";
   document.getElementById("digitos").innerHTML= digitos;
+  }
+  console.log(numeros);
   }
 }
 
