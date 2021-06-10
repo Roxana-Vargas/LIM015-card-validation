@@ -1,69 +1,43 @@
-// import validator from './validator.js';
+import validator from './validator.js';
 
-// console.log(validator);
+
+document.getElementById("btnHawaiana").addEventListener("click", function(){mostrar("div2")});
+document.getElementById("btnAmericana").addEventListener("click", function(){mostrar("div2")});
+document.getElementById("btnPepperoni").addEventListener("click", function(){mostrar("div2")});
+document.getElementById("btnVegetariana").addEventListener("click", function(){mostrar("div2")});
+document.getElementById("btnValidar").addEventListener("click", function(){mostrar("div3")});
+document.getElementById("numeros").addEventListener("keypress", function(e){numeros(e)});
+
+
 
 /*Permitir solamente numeros*/
 
 function numeros(e) {
-  if ((e.keyCode < 48) || (e.keyCode > 57)){
+  if((e.keyCode < 48) || (e.keyCode > 57)){
     e.returnValue = false;
-  }
+  } 
 }
 
 /*Ocultar y mostrar elementos de html*/
-
-function showDiv2() {
+function mostrar(id){
+  let numeros=document.getElementById("numeros").value;
+  let resultado= validator.isValid(numeros);
+  let digitos=validator.maskify(numeros);
+  if(id=="div2"){
   document.getElementById("div2").style.display = "block";
   document.getElementById("div1").style.display = "none";
   document.getElementById("div3").style.display = "none";
-}
-function showDiv3() {
+  } else if(id=="div3"){
   document.getElementById("div3").style.display = "block";
   document.getElementById("div2").style.display = "none";
   document.getElementById("div1").style.display = "none";
+  document.getElementById("validacion").innerHTML= resultado ? "tu tarjeta es válida":"tu tarjeta no es válida";
+  document.getElementById("digitos").innerHTML= digitos;
+  }
 }
 
-/*Validación de la tarjeta*/
-function showNumbers() {
-  let numeros=document.getElementById("numeros").value; //obteniendo el valor
-  let newArray= Array.from(numeros); 
-  let numeroInverso= newArray.reverse(); //invertir el número, parseo
-  let convertir= numeroInverso.map(Number);
-    console.log(convertir);
-    for ( i = 0; i < convertir.length; ++i) {
-      if (i % 2 != 0) {
-        convertir[i]*=2;
-        if (convertir[i]>9){
-        convertir[i]-=9;
-        }
-      }
-    }
-  console.log(convertir);
-  let suma= 0;
-    for( i = 0; i < convertir.length; i++){
-      suma += convertir[i];
-    }
-    console.log(suma);
-  let resto= suma%10;
-    console.log(resto)
-    if (resto === 0) {
-    document.getElementById("validacion").innerHTML = "Tu tarjeta es válida";
-    }
-    else {
-    document.getElementById("validacion").innerHTML = "Tu tarjeta no es válida";
-    }
-  maskify();
-}
 
-// Mostrar sólo los últimos 4 dígitos
 
-function maskify() {
-  let totalDigitos=document.getElementById("numeros").value; //capturando el valor
-  console.log (totalDigitos);
-  let cuatroDigitos = totalDigitos.split('').map((letter, index) => 
-  index < totalDigitos.length - 4 ? '#' : letter).join('');
-  document.getElementById("digitos").innerHTML = cuatroDigitos;
-}
 
 
 

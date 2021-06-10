@@ -27,7 +27,7 @@
       <p>Jamón, piña y queso</p>
       <p>S/31</p>
       <img src="imágenes/hawaiana.jpg" alt="hawaiana" height="100">
-      <input type="submit" value="Elegir" onclick="showDiv2()">
+      <input id="btnHawaiana" type="submit" value="Elegir">
     </div>
 
     <div>
@@ -35,7 +35,7 @@
       <p>Jamón y queso</p>
       <p>S/35</p>
       <img src="imágenes/americana.jpg" alt="americana" height="100">
-      <input type="submit" value="Elegir" onclick="showDiv2()">
+      <input id="btnAmericana" type="submit" value="Elegir">
     </div>
 
     <div>
@@ -43,15 +43,15 @@
       <p>Aceitunas negras, pepperoni y queso</p>
       <p>S/33</p>
       <img src="imágenes/pepperoni.jpg" alt="pepperoni" height="100">
-      <input type="submit" value="Elegir" onclick="showDiv2()">
+      <input id="btnPepperoni" type="submit" value="Elegir">
     </div>
 
     <div>
       <h3>Vegetariana</h3>
       <p>Champiñones, aceitunas negras y queso</p>
       <p>S/33</p>
-      <img src="imágenes/pepperoni.jpg" alt="pepperoni" height="100">
-      <input type="submit" value="Elegir" onclick="showDiv2()">
+      <img src="imágenes/vegetariana.jpg" alt="vegetariana" height="100">
+      <input id="btnVegetariana" type="submit" value="Elegir">
     </div>
   </div>
 
@@ -59,8 +59,8 @@
     <p>¡Gracias por elegir nuestras pizzas</p>
     <img src="imágenes/gracias.gif" alt="gracias">
     <p>Ahora ingresar el número de tu tarjeta para validarla:</p>
-    <input type="numbers" id="numeros" minlength="13" maxlength="16" onkeypress="return numeros(event)">
-    <input type="submit" value="Validar" onclick="showDiv3(); showNumbers()">
+    <input id="numeros" type="numbers" minlength="13" maxlength="16">
+    <input id="btnValidar" type="submit" value="Validar">
   </div>
 
   <div id="div3" style="display: none;">
@@ -71,5 +71,5 @@
   </div>
 
 </body>
-<script src="index.js"></script>
+<script src="index.js"  type="module"></script>
 </html> 
