@@ -25,17 +25,17 @@ function mostrar(id){
   document.getElementById("div1").style.display = "none";
   document.getElementById("div3").style.display = "none";
   } else if(id=="div3" ){
-  let numeros=document.getElementById("numeros").value || alert("ingresa el número de tu tarjeta");
+  let numeros=document.getElementById("numeros").value || alert("Debes ingresar el número de tu tarjeta");
   let resultado= validator.isValid(numeros);
   let digitos=validator.maskify(numeros);
   if(numeros!=""){
   document.getElementById("div3").style.display = "block";
   document.getElementById("div2").style.display = "none";
   document.getElementById("div1").style.display = "none";
-  document.getElementById("validacion").innerHTML= resultado ? "tu tarjeta es válida":"tu tarjeta no es válida";
+  document.getElementById("validacion").innerHTML= resultado ? "¡Tu tarjeta es válida!":"¡Tu tarjeta no es válida!";
   document.getElementById("digitos").innerHTML= digitos;
   }
-  console.log(numeros);
+  // console.log(numeros);
   }
 }
 

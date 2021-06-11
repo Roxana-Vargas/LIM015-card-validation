@@ -4,3 +4,288 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*menú de navegación*/
+nav{
+  background: #E3170A;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin: auto;
+}
+.menu li a{
+  text-decoration: none;
+  color: #000000;
+  padding: 30px;
+  display: block;
+}
+.menu li{
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+}
+
+.menu li a:hover{
+  background: #FE603E;
+  color: #fff;
+}
+/*imagen de portada*/
+.portada img{
+  position: relative;
+  padding: 0;
+  width: 90%;
+  margin: 1% auto auto 5%;
+}
+#entrada{
+text-align: center;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 42px;
+color: #000000;
+}
+
+/*cajas de selección*/
+
+#div1{
+padding: 0;
+width: 100%;
+margin: auto;
+}
+
+#divHawaiana{
+  background-image: url(imágenes/hawaiana.jpg);
+  background-size: cover;
+  width: 30%;
+  height: 300px;
+  margin: 2% 5.5% 1% 14.5%;
+  border-radius: 20px;
+  display: inline-block;
+  opacity: 55%;
+}
+#divHawaiana:hover{
+  opacity: 100%;
+}
+
+#divAmericana{
+  background-image: url(imágenes/americana.jpg);
+  background-size: cover;
+  width: 30%;
+  height: 300px;
+  margin: 2% 14.5% 1% 5%;
+  border-radius: 20px;
+  opacity: 55%;
+  display: inline-block;
+}
+#divAmericana:hover{
+  opacity: 100%;
+}
+#divPepperoni{
+  background-image: url(imágenes/pepperoni.jpg);
+  background-size: cover;
+  width: 30%;
+  height: 300px;
+  margin: 5% 5.5% 1% 14.5%;
+  border-radius: 20px;
+  opacity: 55%;
+  display: inline-block;
+}
+#divPepperoni:hover{
+  opacity: 100%;
+}
+#divVegetariana{
+  background-image: url(imágenes/vegetariana.jpg);
+  background-size: cover;
+  width: 30%;
+  height: 300px;
+  margin: 5% 14.5% 1% 5%;
+  border-radius: 20px;
+  opacity: 55%;
+  display: inline-block;
+}
+#divVegetariana:hover{
+  opacity: 100%;
+}
+
+/*texto dentro del div Hawaiana*/
+#divHawaiana h3{
+  color: #fff;
+  text-align: center;
+  opacity: 100%;
+  font-size: 35px;
+  margin-top: 70px;
+}
+/*botón*/
+#btnHawaiana{
+  background: #E3170A;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  margin: 2% 42% 5% 42%;
+  font-size: 25px;
+  cursor: pointer;
+}
+#btnHawaiana:hover{
+  background: #fff;
+}
+
+/*texto dentro del div Americana*/
+#divAmericana h3{
+  color: #fff;
+  text-align: center;
+  opacity: 100%;
+  font-size: 35px;
+  margin-top: 70px;
+}
+/*botón*/
+#btnAmericana{
+  background: #E3170A;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  margin: 2% 42% 5% 42%;
+  font-size: 25px;
+  cursor: pointer;
+}
+#btnAmericana:hover{
+  background: #fff;
+}
+
+/*texto dentro del div Pepperoni*/
+#divPepperoni h3{
+  color: #fff;
+  text-align: center;
+  opacity: 100%;
+  font-size: 35px;
+  margin-top: 70px;
+}
+/*botón*/
+#btnPepperoni{
+  background: #E3170A;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  margin: 2% 42% 5% 42%;
+  font-size: 25px;
+  cursor: pointer;
+}
+#btnPepperoni:hover{
+  background: #fff;
+}
+
+/*texto dentro del div Vegetariana*/
+#divVegetariana h3{
+  color: #fff;
+  text-align: center;
+  opacity: 100%;
+  font-size: 35px;
+  margin-top: 70px;
+}
+/*botón*/
+#btnVegetariana{
+  background: #E3170A;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  margin: 2% 42% 5% 42%;
+  font-size: 25px;
+  cursor: pointer;
+}
+#btnVegetariana:hover{
+  background: #fff;
+}
+
+/*texto de la página 2*/
+#gracias1{
+text-align: center;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 42px;
+color: #000000;
+}
+#gracias2{
+  width: 20%;
+  margin: 0% 40% 0% 40%;
+}
+#gracias3{
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 42px;
+  color: #000000;
+}
+
+/*input y botón para validar*/
+#numeros{
+  background: #e0cac3;
+  border: none;
+  outline:none;
+  border-radius: 15px;
+  width: 20%;
+  margin: 0% 40% 0% 40%;
+  height: 10%;
+  padding: 20px;
+}
+#btnValidar{
+  background: #E3170A;
+  border: none;
+  outline:none;
+  border-radius: 5px;
+  width: 10%;
+  height: 10%;
+  margin: 1% 43.5% 1% 45.5%;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#btnValidar:hover{
+  background: #FE603E;
+}
+
+/*estilos a mensajes finales*/
+#validacion{
+margin-top: 5%;
+text-align: center;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 42px;
+color: #000000;
+}
+#digitos{
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+#final{
+  width: 20%;
+  margin: 0% 40% 0% 40%;
+}
+
+#btnOk{
+  background: #E3170A;
+  border: none;
+  outline:none;
+  border-radius: 5px;
+  width: 10%;
+  height: 10%;
+  margin: 4% 43.5% 1% 45.5%;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#btnOk:hover{
+  background: #FE603E;
+}
