@@ -6,6 +6,7 @@ document.getElementById("btnAmericana").addEventListener("click", function(){mos
 document.getElementById("btnPepperoni").addEventListener("click", function(){mostrar("div2")});
 document.getElementById("btnVegetariana").addEventListener("click", function(){mostrar("div2")});
 document.getElementById("btnValidar").addEventListener("click", function(){mostrar("div3")});
+document.getElementById("btnVolver").addEventListener("click", function(){mostrar("div2")});
 document.getElementById("numeros").addEventListener("keypress", function(e){numeros(e)});
 
 
@@ -34,6 +35,13 @@ function mostrar(id){
   document.getElementById("div1").style.display = "none";
   document.getElementById("validacion").innerHTML= resultado ? "es válida!":"no es válida!";
   document.getElementById("digitos").innerHTML= digitos;
+  if (resultado==false){
+  document.getElementById("btnVolver").style.display= "block";
+  document.getElementById("btnContinuar").style.display= "none";
+  } else if(resultado==true){
+  document.getElementById("btnVolver").style.display= "none";
+  document.getElementById("btnContinuar").style.display= "block";
+  }
   getIssue();
   }
   // console.log(numeros);

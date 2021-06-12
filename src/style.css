@@ -283,7 +283,7 @@ color: #000000;
   margin: 0% 40% 0% 40%;
 }
 
-#btnOk{
+#btnContinuar{
   background: #E3170A;
   border: none;
   outline:none;
@@ -295,6 +295,22 @@ color: #000000;
   cursor: pointer;
   font-size: 20px;
 }
-#btnOk:hover{
+#btnContinuar:hover{
+  background: #FE603E;
+}
+
+#btnVolver{
+  background: #E3170A;
+  border: none;
+  outline:none;
+  border-radius: 5px;
+  width: 10%;
+  height: 10%;
+  margin: 4% 43.5% 1% 45.5%;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#btnVolver:hover{
   background: #FE603E;
 }
