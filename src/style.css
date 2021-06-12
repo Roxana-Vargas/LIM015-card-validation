@@ -253,13 +253,22 @@ color: #000000;
 
 /*estilos a mensajes finales*/
 #validacion{
-margin-top: 5%;
+margin-top: 0%;
 text-align: center;
 font-style: normal;
 font-weight: 300;
 font-size: 36px;
 line-height: 42px;
 color: #000000;
+}
+#franquicia{
+  margin-top: 3%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
 }
 #digitos{
   text-align: center;
