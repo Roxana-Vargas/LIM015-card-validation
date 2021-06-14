@@ -18,10 +18,6 @@
       <li><a href="#"> Mi cuenta </a></li>
       </ul>
   </nav>
-  <!-- <div class="portada">
-    <img src="imágenes/portada.jpg" alt="portada">
-  </div> -->
-
 
   <div id="div1" style="display:block;">
     <div class="portada">
@@ -30,49 +26,46 @@
     <p id="entrada">Nuestras mejores ofertas</p>
     <div id="divHawaiana">
       <h3>HAWAIANA</h3>
-      <!-- <p>S/31</p> -->
       <input id="btnHawaiana" type="submit" value="Ok">
     </div>
 
     <div id="divAmericana">
       <h3>AMERICANA</h3>
-      <!-- <p>S/35</p> -->
       <input id="btnAmericana" type="submit" value="Ok">
     </div>
 
     <div id="divPepperoni">
       <h3>PEPPERONI</h3>
-      <!-- <p>S/33</p> -->
       <input id="btnPepperoni" type="submit" value="Ok">
     </div>
 
     <div id="divVegetariana">
       <h3>VEGETARIANA</h3>
-      <!-- <p>S/33</p> -->
       <input id="btnVegetariana" type="submit" value="Ok">
     </div>
   </div>
 
   <div id="div2" style="display: none;">
+    <p class="bajada"></p>
     <p id="gracias1">¡Gracias por elegir nuestras pizzas!</p>
     <img id="gracias2" src="imágenes/gracias.gif" alt="gracias">
     <p id="gracias3">Primero, ingresa el número de tu tarjeta para validarla:</p>
-    <input placeholder="Número de tarjeta" id="numeros" type="numbers" minlength="13" maxlength="16" required>
-    <input id="btnValidar" type="submit" value="Validar">
+    <input placeholder="Número de tarjeta" id="numeros" type="numbers" minlength="13" maxlength="16" autocomplete="off">
+    <input id="btnValidar" type="submit" value="Validar tarjeta">
   </div>
 
   <div id="div3" style="display: none;">
-    <p id="franquicia"></p> 
+    <p class="bajada"></p>
     <p id="validacion"></p>
     <p id="digitos"></p>
     <img id="final" src="imágenes/pizza.gif" alt="pizza">
-    <input style="display: none;" id="btnVolver" type="submit" value="Volver">
-    <input style="display: block;" id="btnContinuar" type="submit" value="Continuar">
+    <input style="display: block;" id="btnVolver" type="submit" value="Volver">
+    <input style="display: none;" id="btnContinuar" type="submit" value="Continuar">
   </div>
 
-  <!-- <footer>
+  <footer>
     <p>Quickly pizza - Teléfono: 044-278569 - Correo: quicklyp@gmail.com </p>
-  </footer> -->
+  </footer>
 
 </body>
 <script src="index.js"  type="module"></script>

@@ -17,26 +17,26 @@ de su tarjeta de crédito antes de hacer la compra de un producto.
 
 ## Prototipo
 
-    El prototipo final fue elaborado con la herramienta FIGMA, tal y como se muestra en la siguiente imagen: 
+El prototipo final fue elaborado con la herramienta FIGMA, tal y como se muestra en la siguiente imagen: 
 
 
-    El enlcae para acceder al prototipo es el siguiente:
+El enlace para acceder al prototipo es el siguiente:
 
 ## Investigación UX
 
 ### Usuarios del producto
     
-    Los usuarios son personas que necesitan realizar la compra de una pizza de 
-    manera rápida; el objetivo es brindarles una plataforma segura y de fácil uso. 
+Los usuarios son personas que necesitan realizar la compra de una pizza de 
+manera rápida; el objetivo es brindarles una plataforma segura y de fácil uso. 
 
 ### Solución al problema 
     
-    El proyecto Tarjeta de crédito válida permitirá que los usuarios puedan validar 
-    su tarjeta antes de hacer el pago y compra de una pizza de manera sencilla. 
+El proyecto Tarjeta de crédito válida permitirá que los usuarios puedan validar 
+su tarjeta antes de hacer el pago y compra de una pizza de manera sencilla. 
 
 ### Prototipo inicial
     
-    El prototipo inicial fue elaborado en papel:
+El prototipo inicial fue elaborado en papel:
 
 
 

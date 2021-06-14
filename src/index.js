@@ -29,11 +29,12 @@ function mostrar(id){
   let numeros=document.getElementById("numeros").value || alert("Debes ingresar el número de tu tarjeta");
   let resultado= validator.isValid(numeros);
   let digitos=validator.maskify(numeros);
+  let franquicia=validator.getIssuer(numeros);
   if(numeros!=""){
   document.getElementById("div3").style.display = "block";
   document.getElementById("div2").style.display = "none";
   document.getElementById("div1").style.display = "none";
-  document.getElementById("validacion").innerHTML= resultado ? "es válida!":"no es válida!";
+  document.getElementById("validacion").innerHTML= resultado ? franquicia + " es válida!": franquicia + " no es válida!";
   document.getElementById("digitos").innerHTML= digitos;
   if (resultado==false){
   document.getElementById("btnVolver").style.display= "block";
@@ -42,24 +43,7 @@ function mostrar(id){
   document.getElementById("btnVolver").style.display= "none";
   document.getElementById("btnContinuar").style.display= "block";
   }
-  getIssue();
   }
-  // console.log(numeros);
-  }
-}
-
-/*Mostrar franquicia*/
-function getIssue(){
-  let totalDigitos=document.getElementById("numeros").value;
-  let newArray= Array.from(totalDigitos);
-  let convertirNumeros= newArray.map(Number);
-  // console.log(convertirNumeros);
-  if ((convertirNumeros.length==16||convertirNumeros.length==13) && convertirNumeros[0]==4){
-    document.getElementById("franquicia").innerHTML="¡Tu tarjeta Visa";
-  } else if (convertirNumeros.length==16 && (convertirNumeros[0,1]==5,1 || convertirNumeros[0,1]==5,2 ||convertirNumeros[0,1]==5,3 || convertirNumeros[0,1]==5,4 || convertirNumeros[0,1]==5,5)){
-    document.getElementById("franquicia").innerHTML="¡Tu tarjeta Mastercard";
-  } else if (convertirNumeros.length==15 && (convertirNumeros[0,1]==3,4 || convertirNumeros[0,1]==3,5 ||convertirNumeros[0,1]==3,6 || convertirNumeros[0,1]==3,7)){
-    document.getElementById("franquicia").innerHTML="¡Tu tarjeta American Express";
   }
 }
 
