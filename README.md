@@ -17,10 +17,9 @@ de su tarjeta de crédito antes de hacer la compra de un producto.
 
 ## Prototipo
 
-El prototipo final fue elaborado con la herramienta FIGMA, tal y como se muestra en la siguiente imagen: 
+El prototipo final fue elaborado con la herramienta FIGMA, tal y como se muestra en la siguiente imagen: ![Imagen Proyecto Final](https://github.com/Roxana-Vargas/LIM015-card-validation/blob/master/src/im%C3%A1genes/p1.png)
 
-
-El enlace para acceder al prototipo es el siguiente:
+El enlace para acceder al prototipo es el siguiente: [Enlace a proyecto final](https://www.figma.com/file/m8kRp60MVuempwTXd6uEwb/CardValidation?node-id=0%3A1)
 
 ## Investigación UX
 
@@ -37,6 +36,7 @@ su tarjeta antes de hacer el pago y compra de una pizza de manera sencilla.
 ### Prototipo inicial
     
 El prototipo inicial fue elaborado en papel:
+![Prototipo en papel](https://github.com/Roxana-Vargas/LIM015-card-validation/blob/master/src/im%C3%A1genes/p-inicial.jpg)
 
 
 
