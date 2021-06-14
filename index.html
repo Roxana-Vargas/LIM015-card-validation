@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickly pizza</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="imágenes/logo.png" alt="logo">
+  </header>
+  <nav>
+    <ul class="menu">
+      <li><a href="#" id="inicio"> Inicio </a></li>
+      <li><a href="#"> Ofertas </a></li>
+      <li><a href="#"> Mi cuenta </a></li>
+      </ul>
+  </nav>
+
+  <div id="div1" style="display:block;">
+    <div class="portada">
+    <img src="imágenes/portada.jpg" alt="portada">
+    </div>
+    <p id="entrada">Nuestras mejores ofertas</p>
+    <div id="divHawaiana">
+      <h3>HAWAIANA</h3>
+      <input id="btnHawaiana" type="submit" value="Ok">
+    </div>
+
+    <div id="divAmericana">
+      <h3>AMERICANA</h3>
+      <input id="btnAmericana" type="submit" value="Ok">
+    </div>
+
+    <div id="divPepperoni">
+      <h3>PEPPERONI</h3>
+      <input id="btnPepperoni" type="submit" value="Ok">
+    </div>
+
+    <div id="divVegetariana">
+      <h3>VEGETARIANA</h3>
+      <input id="btnVegetariana" type="submit" value="Ok">
+    </div>
+  </div>
+
+  <div id="div2" style="display: none;">
+    <p class="bajada"></p>
+    <p id="gracias1">¡Gracias por elegir nuestras pizzas!</p>
+    <img id="gracias2" src="imágenes/gracias.gif" alt="gracias">
+    <p id="gracias3">Primero, ingresa el número de tu tarjeta para validarla:</p>
+    <input placeholder="Número de tarjeta" id="numeros" type="numbers" minlength="13" maxlength="16" autocomplete="off">
+    <input id="btnValidar" type="submit" value="Validar tarjeta">
+  </div>
+
+  <div id="div3" style="display: none;">
+    <p class="bajada"></p>
+    <p id="validacion"></p>
+    <p id="digitos"></p>
+    <img id="final" src="imágenes/pizza.gif" alt="pizza">
+    <input style="display: block;" id="btnVolver" type="submit" value="Volver">
+    <input style="display: none;" id="btnContinuar" type="submit" value="Continuar">
+  </div>
+
+  <footer>
+    <p>Quickly pizza - Teléfono: 044-278569 -  Correo: quicklyp@gmail.com </p>
+  </footer>
+
+</body>
+<script src="index.js"  type="module"></script>
+</html> 
