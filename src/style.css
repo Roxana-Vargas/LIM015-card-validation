@@ -27,7 +27,7 @@ nav{
 .menu li a{
   text-decoration: none;
   color: #000000;
-  padding: 30px;
+  padding: 25px;
   display: block;
   right: 100px;
 }
@@ -37,7 +37,7 @@ nav{
 .menu li{
   display: inline-block;
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .menu li a:hover{
