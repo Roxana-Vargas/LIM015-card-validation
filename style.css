@@ -27,7 +27,7 @@ nav{
 .menu li a{
   text-decoration: none;
   color: #000000;
-  padding: 30px;
+  padding: 20px;
   display: block;
   right: 100px;
 }
@@ -37,7 +37,7 @@ nav{
 .menu li{
   display: inline-block;
   text-align: center;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .menu li a:hover{
@@ -134,8 +134,7 @@ nav{
   margin-top: 90px;
 }
 /*botón*/
-#btnHawaiana{
-  background: #E3170A;
+.btnHamburguesa{
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -143,9 +142,7 @@ nav{
   margin: 2% 42% 5% 42%;
   font-size: 25px;
   cursor: pointer;
-}
-#btnHawaiana:hover{
-  background: #fff;
+  background: none;
 }
 
 /*texto dentro del div Americana*/
@@ -156,20 +153,6 @@ nav{
   font-size: 35px;
   margin-top: 90px;
 }
-/*botón*/
-#btnAmericana{
-  background: #E3170A;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: none;
-  margin: 2% 42% 5% 42%;
-  font-size: 25px;
-  cursor: pointer;
-}
-#btnAmericana:hover{
-  background: #fff;
-}
 
 /*texto dentro del div Pepperoni*/
 #divPepperoni h3{
@@ -179,20 +162,6 @@ nav{
   font-size: 35px;
   margin-top: 90px;
 }
-/*botón*/
-#btnPepperoni{
-  background: #E3170A;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: none;
-  margin: 2% 42% 5% 42%;
-  font-size: 25px;
-  cursor: pointer;
-}
-#btnPepperoni:hover{
-  background: #fff;
-}
 
 /*texto dentro del div Vegetariana*/
 #divVegetariana h3{
@@ -201,20 +170,6 @@ nav{
   opacity: 100%;
   font-size: 35px;
   margin-top: 90px;
-}
-/*botón*/
-#btnVegetariana{
-  background: #E3170A;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: none;
-  margin: 2% 42% 5% 42%;
-  font-size: 25px;
-  cursor: pointer;
-}
-#btnVegetariana:hover{
-  background: #fff;
 }
 
 /*texto de la página 2*/
